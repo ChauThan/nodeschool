@@ -1,0 +1,9 @@
+{
+    "_id": "_design/languages",
+    "views": {
+        "languages": {
+            "map": "function(doc){emit(null, doc)}",
+            "reduce": "function(keys, values, rereduce){return values.length}"
+        }
+    }
+}
