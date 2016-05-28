@@ -1,0 +1,8 @@
+{
+    "_id": "_design/thingsMadeOfMetal",
+    "views": {
+        "thingsMadeOfMetal": {
+            "map": "function(doc){if(doc.material == 'metal') emit(doc._id, doc);}"
+        }
+    }
+}
